@@ -5,11 +5,11 @@ nav {z-index: 2000; color: white;}
 nav a {color: white;}
 .navbar {margin-bottom: 0;} /*position: fixed; top: 0;}*/
 #myNavbar {float: right;}
-.bg { 
+.bg {
     /* The image used */
     background-image: url("images/myspace.jpg");
     /* Full height */
-    height: 100%; 
+    height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ nav a {color: white;}
     opacity: 0.5;
     filter: alpha(opacity=50); /* For IE8 and earlier */
     text-align: center;
-    
+
     position: absolute;
     top: 0;
     left: 0;
@@ -40,59 +40,64 @@ nav a {color: white;}
     z-index: 200;
     /*cursor: pointer;*/
 }
-#name {color: white; 
-    position: absolute; 
-    top: 25%; 
-    z-index: 1000; 
-    text-align: center; 
-    margin: 0 auto; 
+#name {color: white;
+    position: absolute;
+    top: 25%;
+    z-index: 1000;
+    text-align: center;
+    margin: 0 auto;
     padding: 0 10%;}
+.myname {font-size: 72px;}
 #main {position: absolute; top: 100%;}
 
-#skills {padding: 20px 20%; margin-top: 100px;}
-.lang {text-align: center;
+#skills {padding: 20px 10%; margin: 100px 0;}
+.skill {width: 33%;}
+#skills .logo>img {max-height: 200px; display: block; margin: 0 auto;}
+.lang {display: none; height: 170px;
+  text-align: center;
     padding: 20px;
     border: solid 1px #ccc;
-    margin: 10px 5px 70px;
-    /*width: 31%;*/
+    /*margin: 10px 5px 70px;*/
 }
 .lang h1 {margin: -40px 0 20px;}
-.lang span {background-color: white; padding: 0 10px;}
+.lang span {background-color: white;}
+.lang p {font-size: 20px;}
 
-#about {margin: 50px 0; 
-    width: 100%; 
-    height: 200px; 
-    overflow-y: hidden; 
+#about {margin: 50px 0;
+    width: 100%;
+    height: 200px;
+    overflow-y: hidden;
     overflow-x: hidden;}
 #img_container {width: 200%; margin-left: -100px; }
 .about_me {margin: 0; height: 200px; float: left;}
 .filter {z-index: 5000; position: absolute;}
 
-#dark {background-color: rgba(0,0,0,0.5); 
-    width: 100%; 
-    position: absolute; 
-    height: 200px; 
+#dark {background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    position: absolute;
+    height: 200px;
     overflow-x: hidden;}
 
-#tagline {color: white; 
-    margin-right: 50px; 
-    position: absolute; 
-    right: 50px; margin-top: 50px;}
+#tagline {color: white;
+    margin-right: 50px;
+    position: absolute;
+    right: 50px; margin-top: 50px; text-align: right;}
+#tagline h1 {font-size: 50px;}
 
 #read {margin-top: 150px;}
 #view_container {width: 220px; margin: 0 auto;}
-#resume {background-color: #2ec105; 
-    color: white; 
-    padding: 15px 20px; 
-    border: none; 
+#resume {background-color: #2ec105;
+    color: white;
+    padding: 15px 20px;
+    border: none;
     float: left;
     position: relative;
     margin-bottom: 150px
 }
 #resume h3 {margin-top: 10px;}
 .glyphicon-arrow-right {font-size: 16px;}
-#view_options {float: left; 
-    padding: 15px; 
+#view_options {float: left;
+    padding: 15px;
     /*margin-left: 50px; */
     width: 300px;}
 .view_icon {float: left; height: 50px; margin-left: 20px;}
@@ -101,3 +106,23 @@ nav a {color: white;}
 #contact fieldset {}
 #contact p {margin: 20px 0 5px;}
 .form_field {width: 100%; line-height: 200%;}
+
+@media (max-width: 1200px) {
+  #tagline {width: 70%; right: 0; margin-right: 20px; float: right;}
+}
+@media (max-width: 1110px) {
+  .lang h1 {font-size: 30px; margin-top: -35px;}
+  #tagline {width: 60%; margin-top: 20px;}
+}
+@media (max-width:992px) {
+  .line {display: none;}
+  .lang p {font-size: 18px;}
+  #contact {padding: 20px 20%;}
+}
+
+@media (max-width: 768px) {
+  .myname {font-size: 60px;}
+  #tagline {width: 10%; margin-top: 2px; left: 0; margin-left: 20px; text-align: left; float: left;}
+  #tagline h1 {font-size: 30px;}
+  #contact {padding: 20px 10%;}
+}
