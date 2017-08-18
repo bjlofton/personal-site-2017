@@ -22,6 +22,7 @@ $(document).ready(function() {
         }
         $( '#view_options' ).toggle( 'slow' );
     });
+
     $( "#name" ).click(function() {
         $('html, body').animate({
             scrollTop: $("#main").offset().top
