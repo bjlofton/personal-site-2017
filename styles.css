@@ -125,4 +125,16 @@ nav a {color: white;}
   #tagline {width: 10%; margin-top: 2px; left: 0; margin-left: 20px; text-align: left; float: left;}
   #tagline h1 {font-size: 30px;}
   #contact {padding: 20px 10%;}
+
+.skill {width: 75%; margin: 30px auto;}
+#skills .logo>img {height: 100%;}
+.lang {display: none; height: 200px;
+  text-align: center;
+    padding: 20px;
+    border: solid 1px #ccc;
+    /*margin: 10px 5px 70px;*/
+}
+.lang h1 {margin: -40px 0 20px;}
+.lang span {background-color: white;}
+.lang p {font-size: 20px;}
 }
